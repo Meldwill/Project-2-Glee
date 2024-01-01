@@ -5,3 +5,86 @@
 
 
 @import 'media';
+
+
+.header {
+  padding: 50px 0 50px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    color: $accent;
+    @extend %rubik-500;
+    font-size: 36px;
+    line-height: 58px;
+    padding-right: 100px;
+  }
+}
+
+.menu {
+  padding: 8px 0 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    @extend %rubik-500;
+  }
+
+  &__list-item {
+    padding-left: 36px;
+  }
+
+  &__list-link {
+    color: $accent;
+    @extend %rubik-500;
+  }
+}
+
+.user-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__link+.user-nav__link--img:first-child {
+    background-color: #edf1f4;
+    width: 18px;
+    height: 18px;
+  }
+
+  &__link--box {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 20px;
+    align-items: center;
+    background-color: #fcd7b6;
+    width: 178px;
+    height: 50px;
+    border-radius: 20px;
+  }
+
+  &__link {
+    position: relative;
+  }
+
+  &__num {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -10px;
+    right: -9px;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
