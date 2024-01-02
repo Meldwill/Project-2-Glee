@@ -54,6 +54,16 @@
   justify-content: space-around;
   align-items: center;
 
+  &__link--line::after {
+    content: "";
+    position: absolute;
+    background-color: #fde7d3;
+    width: 1px;
+    height: 32px;
+    bottom: -10px;
+    left: 42px;
+  }
+
   &__link+.user-nav__link--img:first-child {
     background-color: #edf1f4;
     width: 18px;
