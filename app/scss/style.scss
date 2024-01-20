@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
@@ -110,11 +111,32 @@
   align-items: self-start;
   border-bottom: 1px solid #dae4e9;
 
+  &__logo {
+    display: flex;
+    padding-bottom: 22px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
   &__title {
     color: $accent;
     @extend %rubik-500;
     font-size: 36px;
     line-height: 58px;
+  }
+
+  &__adress,
+  &__phone,
+  &__email {
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: $nav;
+    @extend %rubik-400;
+    display: block;
   }
 
   &__contact {
@@ -135,15 +157,16 @@
     padding: 28px 0 30px;
   }
 
-  &__logo {
-    display: flex;
-    padding-bottom: 22px;
+  &__link {
+    font-size: 14px;
+    color: $nav;
+    @extend %rubik-400;
+    display: block;
+    line-height: 24px;
   }
 
-  &__item {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
+  &__adress {
+    line-height: 24px;
   }
 
   &__text {
@@ -172,40 +195,12 @@
   }
 
   &__form-btn {
-    background-color: #a3bbc8;
-    border: none;
+    @extend %btn;
     padding: 15px 16px;
-    color: #ffffff;
-    @extend %dmsans-400;
-    font-size: 14px;
-    display: block;
-    cursor: pointer;
   }
 
   &__form {
     display: flex;
-  }
-
-  &__link {
-    font-size: 14px;
-    color: $nav;
-    @extend %rubik-400;
-    display: block;
-    line-height: 24px;
-  }
-
-  &__adress {
-    line-height: 24px;
-  }
-
-  &__adress,
-  &__phone,
-  &__email {
-    padding-bottom: 20px;
-    font-size: 14px;
-    color: $nav;
-    @extend %rubik-400;
-    display: block;
   }
 }
 
@@ -237,3 +232,162 @@
   }
 
 }
+
+.top-slider {
+  position: relative;
+
+  &__wrapper {
+    padding: 222px 0 278px;
+    background-color: #fcd7b6;
+    background-image: url('../images/ellipse-sofa.png');
+    background-repeat: no-repeat;
+    background-position: 84%;
+  }
+
+  &__wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__inner {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+
+  &__title {
+    max-width: 430px;
+    font-size: 72px;
+    line-height: 70px;
+    color: $title;
+    @extend %rubik-500;
+    padding-bottom: 44px;
+  }
+
+  &__text {
+    color: $accent;
+    @extend %rubik-400;
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 42px;
+    max-width: 430px;
+  }
+
+  &__link {
+    @extend %btn;
+    padding: 22px 100px 22px 28px;
+    max-width: 200px;
+  }
+
+  &__img {
+    object-fit: contain;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -200px;
+
+  li {
+    padding: 0 10px;
+
+    button {
+      background-color: #fde3cc;
+      width: 30px;
+      height: 30px;
+      border: none;
+      border-radius: 50%;
+      padding: 12px 12px;
+      color: #667983;
+      @extend %rubik-400;
+      font-size: 10px;
+      line-height: 8px;
+
+      &:hover {
+        background-color: #ffffff;
+        @extend %rubik-500;
+      }
+    }
+  }
+}
+
+.bottom-slider {
+  padding: 46px 46px;
+  background-color: #fef7f0;
+
+  &__service-items {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__service-item {
+    width: 200px;
+    max-width: 100%;
+    position: relative;
+  }
+
+  &__service-subtitle {
+    @extend %dmsans-400;
+    font-size: 18px;
+    line-height: 40px;
+    color: #585858;
+  }
+
+  &__service-text {
+    @extend %dmsans-400;
+    color: #585858;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &__24::before {
+    content: '';
+    background-image: url('../images/svg/24.svg');
+    width: 52px;
+    height: 52px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: -74px;
+    bottom: 36px;
+  }
+
+  &__truck::before {
+    content: '';
+    background-image: url('../images/svg/truck.svg');
+    width: 52px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: -74px;
+    bottom: 54px;
+  }
+
+  &__credit::before {
+    content: '';
+    background-image: url('../images/svg/credit.svg');
+    width: 54px;
+    height: 52px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: -74px;
+    bottom: 36px;
+  }
+
+}
+
+
