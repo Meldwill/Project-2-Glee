@@ -1,5 +1,5 @@
 $accent: #436372;
-$title: #243f4d;
+$title: #243f4d; 
 $nav: #8b8b8b;
 
 %dmsans-400 {
@@ -34,4 +34,11 @@ $nav: #8b8b8b;
   font-size: 14px;
   display: block;
   cursor: pointer;
+}
+
+@function max ($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function max ($numbers...) {
+    @return m#{i}n(#{$numbers});
 }
