@@ -1,0 +1,44 @@
+$accent: #436372;
+$title: #243f4d; 
+$nav: #8b8b8b;
+
+%dmsans-400 {
+  font-family: 'DMSans-VariableFont_opsz.wght', sans-serif;
+  font-weight: 400;
+}
+
+%myriadpro-400 {
+  font-family: 'MYRIADPRO-REGULAR', sans-serif;
+  font-weight: 400;
+}
+
+%poppins-700 {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+%rubik-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+%rubik-500 {
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+
+%btn {
+  background-color: #a3bbc8;
+  border: none;
+  color: #ffffff;
+  @extend %dmsans-400;
+  font-size: 14px;
+  display: block;
+  cursor: pointer;
+}
+
+@function max ($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function max ($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
