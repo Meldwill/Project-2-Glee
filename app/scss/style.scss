@@ -754,6 +754,7 @@
   &__img {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+
     height: 252px;
   }
 
@@ -777,6 +778,8 @@
   &__box {
     padding: 36px 60px 20px 34px;
     background-color: #fff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 
   &__text {
@@ -798,25 +801,22 @@
 
 
 .partners-icons {
+  padding-top: 94px;
+  display: block;
+
   &__items {
     background-color: #fef7f0;
-    height: 436px;
     display: flex;
     justify-content: center;
-    margin-top: -120px;
     align-items: center;
+    padding-bottom: 94px;
+    height: 470px;
+    margin-top: -214px;
   }
 }
 
-li.partners-icons__item {
-  padding: 310px 0 120px;
-}
-
-.partners-icons__items+li {
-  margin-left: 100px;
-}
-
-.partners-icons__item img {
+.partners-icons__items li {
+  padding-top: 94px;
   padding-left: 50px;
   padding-right: 50px;
 }
